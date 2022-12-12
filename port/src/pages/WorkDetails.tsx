@@ -9,14 +9,11 @@ export default function WorkDetails(props: { location: { state: { data: any; }; 
   const { data } = props.location.state;  
   const img = data.attributes.images.data
   const images = img.map(({id,attributes: {url}}: {id: any, attributes : any , url: string})=>{    
-    let link = `http://localhost:1337${url}`
-      
     return(
-      <img key={id} src={link} alt="Logo" className="imagesWork" />
+      <img key={id} src={url} alt="Logo" className="imagesWork" />
     )   
   }) 
   
-  console.log(data.attributes.git);
   
 
   return (
