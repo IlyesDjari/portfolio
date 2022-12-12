@@ -1,0 +1,45 @@
+h1,
+li,
+h2, 
+p {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+}
+
+div {
+    overflow: hidden;
+}
+
+button {
+    border-style: none;
+}
+
+li {
+    font-weight: 325;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+li:hover {
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.active {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li:hover,
+button:hover {
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

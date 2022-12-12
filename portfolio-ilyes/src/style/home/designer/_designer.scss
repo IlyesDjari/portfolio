@@ -1,0 +1,80 @@
+.designerSubtitle {
+    color: #23AEFF;
+}
+
+.designContainer {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        gap: 10vh;
+    }
+}
+
+.designerTools {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+    @media screen and (max-width: 480px) {
+        width: 71.5vw;
+        justify-content: space-between;
+    }
+}
+
+.circleDesign {
+    background-color: #2F2F31;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+    @media screen and (max-width: 480px) {
+        height: 32.5vw;
+        width: 32.5vw;
+    }
+}
+
+.circleDesign img {
+    height: 7vh;
+    width: 7vh;
+    @media screen and (max-width: 480px) {
+        height: 5vh;
+        width: 5vh;
+    }
+}
+
+.circleDesign h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    @media screen and (max-width: 480px) {
+        font-size: 1rem;
+    }
+}
+
+.projectsDesign {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.projectsDesign h2 {
+    opacity: 80%;
+    font-size: 2.5rem;
+    @media screen and (max-width: 480px) {
+        font-size: 1.5rem;
+    }
+}
+
+.projectsDesign img {
+    width: 5vw;
+    @media screen and (max-width: 480px) {
+        width: 10vw;
+    }
+}

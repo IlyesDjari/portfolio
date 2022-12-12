@@ -1,0 +1,58 @@
+.skills {
+    margin: 0 12.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    @media screen and (max-width: 480px) {
+        margin: 10vh 12.5vw 0 12.5vw;
+    }
+}
+
+.skillsBackground {
+    background-color: black;
+}
+
+.whatICan {
+    font-size: 5rem;
+    text-align: center;
+    @media screen and (max-width: 480px) {
+        font-size: 3rem;
+    }
+}
+
+.mySkillSet {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 2.2rem;
+    font-weight: 600;
+    @media screen and (max-width: 480px) {
+        font-size: 1.5rem;
+    }
+}
+
+.textSkillSet {
+    background-image: linear-gradient(to right, #ff0000, #ffff00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.lineDesc {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 15vh;
+    height: 0.15vh;
+    @media screen and (max-width: 480px) {
+        margin-top: 5vh;
+    }
+}
+
+.resumeDesc h2 {
+    color: #137BE5;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 2vh;
+    text-align: end;
+}

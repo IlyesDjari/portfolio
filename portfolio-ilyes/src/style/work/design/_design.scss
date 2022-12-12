@@ -1,0 +1,31 @@
+.projectContainer {
+height: 20vh;
+background-color: #2F2F31;
+width: 16vw;
+transition: all 0.5s;
+}
+
+.projectContainer:hover {
+transform: scale(1.1);
+cursor: pointer;
+}
+
+.projectName {
+  color: white;
+  padding-top: 4vh;
+  text-align: center;
+}
+
+.allProjects {
+  padding: 1vh;
+  margin: 4vh 12.5vw 0 12.5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.designUIUXTitle {
+  margin: 5vh 12.5vw 0 13.5vw;
+  color: #23AEFF;
+}

@@ -1,0 +1,77 @@
+.workDetailsPageContainer {
+  background-color: black;
+  height: auto;
+  padding-bottom: 10vh;
+}
+
+.detailsContent {
+  padding: 15vh 12.5vw 0 12.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.detailsContentWeb {
+  padding: 15vh 12.5vw 0 12.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
+
+.detailsTitle {
+  font-size: 3.2rem;
+}
+
+.descriptionWork {
+  margin-top: 5vh;
+  font-size: 1.4rem;
+  opacity: 30%;
+  font-weight: 500;
+}
+
+.workTxt {
+  width: 35vw;
+}
+
+.carouselView .carousel {
+  width: 26.5vw !important;
+}
+
+.carouselWeb {
+  height: auto;
+  width: 72.5vw !important;
+}
+.carouselWeb img {
+  height: 50vh !important;
+  width: 72.5vw !important;
+}
+
+.thumbs-wrapper {
+  display: none;
+}
+
+.headerDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.carousel img {
+  height: 75vh;
+  width: auto !important;
+}
+
+.githubButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+  padding: 2%;
+  width: 20vw;
+background-color: #2F2F31;
+}
+
+.gitImg {
+height: 4vh;
+}

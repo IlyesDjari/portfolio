@@ -1,0 +1,65 @@
+.frontEndDevelopmentSubtitle {
+    font-size: 1.25rem;
+    color: #B84BFF;
+}
+
+.frontEndElements {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+    flex-wrap: wrap;
+    @media screen and (max-width: 480px) {
+        justify-content: space-between;
+    }
+}
+
+.htmlFront,
+.cssFront,
+.jsFront,
+.tsFront,
+.reactFront,
+.angularFront {
+    display: flex;
+    flex-direction: row;
+    background-color: #2F2F31;
+    width: 22vw;
+    height: 12.5vh;
+    padding: 3vh 0 3vh 5vw;
+    align-items: center;
+    gap: 2vw;
+    @media screen and (max-width: 480px) {
+        padding: 0;
+        width: 32.5vw;
+        height: 15vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.htmlFront img,
+.cssFront img,
+.jsFront img,
+.tsFront img,
+.reactFront img,
+.angularFront img {
+    width: 7vw;
+    height: auto;
+}
+
+.projectsFrontEnd {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    width: 70.5vw;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3vw;
+}
+
+.projectsFrontEnd img {
+    width: 5vw;
+    @media screen and (max-width: 480px) {
+        width: 10vw;
+    }
+}

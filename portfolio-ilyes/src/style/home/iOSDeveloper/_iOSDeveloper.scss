@@ -1,0 +1,77 @@
+.iOS {
+    margin: 0 12.5vw;
+    padding-top: 10vh;
+    height: 100vh;
+}
+
+.iOSBackground {
+    background-color: black;
+}
+
+.mobileDevelopmentSubtitle {
+    font-size: 1.25rem;
+    color: #00FF41;
+}
+
+.iOSDeveloperTitle {
+    font-size: 3rem;
+    @media screen and (max-width: 480px) {
+        font-size: 1.75rem;
+    }
+}
+
+.iosTools {
+    margin-top: 17.5vh;
+    @media screen and (max-width: 480px) {
+        margin-top: 5vh;
+    }
+}
+
+.program {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 2vh;
+}
+
+.program img {
+    width: 4vw;
+    @media screen and (max-width: 480px) {
+        width: 10vw;
+    }
+}
+
+.projectsIos {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+}
+
+.projectsIos h2 {
+    opacity: 80%;
+}
+
+.projectsIos img {
+    width: 5vw;
+}
+
+.iosContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+    }
+}
+
+.iphoneExample {
+    width: auto;
+    height: 80vh;
+    @media screen and (max-width: 480px) {
+        height: auto;
+        width: auto;
+    }
+}

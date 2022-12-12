@@ -1,0 +1,9 @@
+.gcloudignore
+.git
+.gitignore
+node_modules/
+#!include:.gitignore
+!.env
+yarn.lock  
+venv/
+/google-cloud-sdk

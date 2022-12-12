@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ios_devs",
+  "info": {
+    "singularName": "ios-dev",
+    "pluralName": "ios-devs",
+    "displayName": "iosDev"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
