@@ -34,6 +34,7 @@
         height: 15vh;
         flex-direction: column;
         justify-content: center;
+        gap: 5vw;
     }
 }
 
@@ -43,8 +44,23 @@
 .tsFront img,
 .reactFront img,
 .angularFront img {
-    width: 7vw;
+    width: 3.5vw;
     height: auto;
+    @media screen and (max-width: 480px) {
+        width: 10vw;
+    }
+}
+
+.htmlFront h2,
+.cssFront h2,
+.jsFront h2,
+.tsFront h2,
+.reactFront h2,
+.angularFront h2 {
+    font-size: 1.75rem;
+    @media screen and (max-width: 480px) {
+        font-size: 1rem;
+    }
 }
 
 .projectsFrontEnd {
@@ -55,6 +71,9 @@
     justify-content: flex-end;
     align-items: center;
     gap: 3vw;
+    @media screen and (max-width: 480px) {
+        width: 75vw;
+    }
 }
 
 .projectsFrontEnd img {

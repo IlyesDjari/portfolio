@@ -7,8 +7,8 @@ module.exports = [
                 useDefaults: true,
                 directives: {
                     'connect-src': ["'self'", 'https:'],
-                    'img-src': ["'self'", 'data:', 'blob:', 'storage.googleapis.com/portfolioilyes-bucket'],
-                    'media-src': ["'self'", 'data:', 'blob:', 'storage.googleapis.com/portfolioilyes-bucket'],
+                    'img-src': ["'self'", 'data:', 'blob:', 'https://storage.googleapis.com/portfolioilyes-bucket/'],
+                    'media-src': ["'self'", 'data:', 'blob:', 'https://storage.googleapis.com/portfolioilyes-bucket/'],
                     upgradeInsecureRequests: null,
                 },
             },

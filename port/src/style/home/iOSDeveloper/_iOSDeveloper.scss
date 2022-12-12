@@ -1,7 +1,7 @@
 .iOS {
     margin: 0 12.5vw;
     padding-top: 10vh;
-    height: 100vh;
+    height: 110vh;
 }
 
 .iOSBackground {
@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3vw;
+    gap: 4vw;
     margin-bottom: 2vh;
 }
 
@@ -42,20 +42,26 @@
     }
 }
 
-.projectsIos {
-    margin-top: 20vh;
+.projectsIos a {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 3vw;
+    @media screen and (max-width: 480px) {
+        margin-top: 2vh;
+        justify-content: center;
+    }
 }
 
-.projectsIos h2 {
+.projectsIos a h2 {
     opacity: 80%;
 }
 
-.projectsIos img {
+.projectsIos a img {
     width: 5vw;
+    @media screen and (max-width: 480px) {
+        width: 12.5vw;
+    }
 }
 
 .iosContainer {
@@ -67,11 +73,19 @@
     }
 }
 
+.programText {
+    @media screen and (max-width: 480px) {
+        font-size: 1.3rem;
+        opacity: 80%;
+    }
+}
+
 .iphoneExample {
     width: auto;
     height: 80vh;
     @media screen and (max-width: 480px) {
         height: auto;
-        width: auto;
+        width: 72.5vw;
+        margin: 0 0 0 0;
     }
 }

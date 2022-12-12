@@ -7,7 +7,7 @@ export function Designer() {
   return (
     <div className="iOSBackground">
     <div className="iOS">
-    <h2 className="designerSubtitle">Designer</h2>
+    <h2 className="designerSubtitle">Design</h2>
     <h1 className="iOSDeveloperTitle">UI/UX Designer</h1>
     <div className="designContainer">
       <div className="designerTools">
@@ -20,7 +20,7 @@ export function Designer() {
       <SeeProjectsButton src="/images/blue-arrow.png" text="Explore my designs" />
       </div>
     </div>
-
+    <div className="footerLine"></div>
     </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from "react";
+import { BackButton } from "../components/button/BackButton";
 import Nav from "../components/home/Nav";
 import { Backend } from "../components/home/subpagesWork/Backend";
 import { Design } from "../components/home/subpagesWork/Design";
@@ -11,6 +12,7 @@ export default function Work() {
       <>
       <div className="workPageContainer">
       <Nav></Nav>
+      <BackButton></BackButton>
       <Ios></Ios>
       <Frontend></Frontend>
       <Backend></Backend>

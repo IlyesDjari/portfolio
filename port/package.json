@@ -12,6 +12,7 @@
         "@types/react-dom": "^18.0.9",
         "axios": "^1.2.1",
         "env-cmd": "^10.1.0",
+        "framer-motion": "^7.6.19",
         "node-sass": "^7.0.3",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",

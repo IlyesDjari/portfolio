@@ -1,3 +1,4 @@
+import React from "react";
 import { ProgramSubtitle } from "../ProgramSubtitle";
 import { SeeProjectsButton } from "../SeeProjectsButton";
 
@@ -15,15 +16,14 @@ export function IOSDeveloper() {
       <ProgramSubtitle src="/images/swift.png" text="Swift storyboard"/>
       <ProgramSubtitle src="/images/swiftui.png" text="Swift UI"/>
       <ProgramSubtitle src="/images/objective-c-logo.png" text="Objective-C"/>
-      
-      <div className="projectsIos">
-      <SeeProjectsButton src="/images/right-arrow.png" text="Explore my apps" />
-      </div>
+
     </div>
     </div>
     <img className="iphoneExample" src={"/images/iPhonePortfolio.png"} alt="" />
     </div>
-
+    <div className="projectsIos">
+      <SeeProjectsButton src="/images/right-arrow.png" text="Explore my apps" />
+    </div>
     </div>
     </div>
   )
