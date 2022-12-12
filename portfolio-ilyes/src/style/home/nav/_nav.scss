@@ -1,0 +1,76 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 12.5vw;
+    @media screen and (max-width: 480px) {
+        justify-content: space-between;
+    }
+}
+
+.navContainer {
+    background-color: #121212;
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    z-index: 10;
+    @media screen and (max-width: 480px) {
+        height: 8vh;
+    }
+}
+
+.ilyesNav {
+    width: 10vw;
+    height: inherit;
+}
+
+.logoNav {
+    height: auto;
+    width: 1.5vw;
+    @media screen and (max-width: 480px) {
+        width: 5vw;
+    }
+}
+
+.contactNav {
+    width: 12.5vw;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 480px) {
+        width: auto;
+    }
+}
+
+.contactNav h1 {
+    font-size: 1.3rem;
+}
+
+.menuNav ul {
+    width: 55vw;
+    height: 6vh;
+    display: flex;
+    gap: 5vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width: 480px) {
+        height: 8vh;
+        width: auto;
+        margin-right: 4vw;
+        justify-content: center;
+    }
+}
+
+.menuNav ul li {
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+.contactButton {
+    background-color: #137BE5;
+    padding: 0.4vh 0.9vw;
+    border-radius: 10px;
+    color: white;
+}

@@ -1,0 +1,48 @@
+.homeBG {
+    background-color: black;
+    height: 90vh;
+}
+
+.introductionContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vh;
+    height: 70vh;
+    margin: 0 12.5vw;
+}
+
+.introductionTitle {
+    font-weight: 600;
+    font-size: 5.1rem;
+    @media screen and (max-width: 480px) {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.introductionSubTitle {
+    font-size: 1.75rem;
+    font-weight: 300;
+    @media screen and (max-width: 480px) {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+.introductionFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    margin: 12.5vh 12.5vw;
+    @media screen and (max-width: 480px) {
+        justify-content: center;
+    }
+}
+
+.introductionFooter li {
+    list-style: none;
+    font-weight: 200;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.2);
+}
