@@ -1,8 +1,8 @@
-import { url } from "inspector";
 import Nav from "../components/home/Nav";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { GitButton } from "../components/button/GitButton";
+import React from "react";
 
 
 export default function WorkDetails(props: { location: { state: { data: any; }; }; }) {
@@ -24,7 +24,7 @@ export default function WorkDetails(props: { location: { state: { data: any; }; 
       <div className="workDetailsPageContainer">
       <Nav></Nav>
 
-      {data.attributes.type == "mobile" ? (
+      {data.attributes.type === "mobile" ? (
       <div className="detailsContent">
       <div className="workTxt">
       <h1 className="detailsTitle">{data.attributes.title}</h1>  

@@ -1,3 +1,4 @@
+import React from "react";
 import Nav from "../components/home/Nav";
 import { Backend } from "../components/home/subpagesWork/Backend";
 import { Design } from "../components/home/subpagesWork/Design";

@@ -5,6 +5,7 @@ import FrontEnd from "../components/home/subPages/FrontEnd"
 import Introduction from "../components/home/subPages/Introduction"
 import { IOSDeveloper } from "../components/home/subPages/IOSDeveloper"
 import Nav from "../components/home/Nav"
+import React from "react"
 
 export default function Home() {
 

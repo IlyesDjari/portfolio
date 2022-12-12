@@ -1,3 +1,4 @@
+import React from "react";
 import { CircularElements } from "../CircularElements";
 import { SeeProjectsButton } from "../SeeProjectsButton";
 
