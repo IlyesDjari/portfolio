@@ -58,15 +58,16 @@
 }
 
 .carouselWeb {
-    height: auto;
+    height: auto !important;
     width: 72.5vw !important;
 }
 
 .carouselWeb img {
-    height: 20vh !important;
+    aspect-ratio: 16/9 !important;
+    height: auto !important;
     width: 72.5vw !important;
     @media screen and (max-width: 480px) {
-        aspect-ratio: 16/9 !important;
+        height: 20vh !important;
     }
 }
 
