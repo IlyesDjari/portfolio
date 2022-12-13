@@ -28,9 +28,11 @@ export default function Nav() {
                         </ul>
                     </div>
                     <div className="contactNav">
-                        <button className="contactButton">
+                        <a href="mailto:contact@ilyesdjari.com" className="contactButton">
+                            <h2>
                             Contact me
-                        </button>
+                            </h2>
+                        </a>
                     </div>
                 </div>
             </nav> 
