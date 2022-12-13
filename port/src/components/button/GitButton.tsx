@@ -12,7 +12,6 @@ export const GitButton: React.FC<gitProps> = ({ src }) => {
     <a href={src} target="_blank" rel="noreferrer">
     <div className="githubButton">
       <img className="gitImg" src="/images/git.png" alt="github" />
-    <h2>Open repository</h2>
   </div>
   </a>
   )

@@ -1,11 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import { useLocation } from "react-router-dom";
+
 
 
 
 
 
 export default function Nav() {
+    
+    const location = useLocation();
+    console.log(location.pathname);
+
     return (
         <>
         <nav className="navContainer">
@@ -15,8 +21,10 @@ export default function Nav() {
                     </div>
                     <div className="menuNav">
                         <ul>
-                            <li className="active"><Link to='/'>Home</Link></li>
-                            <li><Link to='/work'>Work</Link></li>
+                        {location.pathname === "/" ? (
+                            <><li className="active"><Link to='/'>Home</Link></li><li><Link to='/work'>Work</Link></li></>) : (
+                                <><li><Link to='/'>Home</Link></li><li className="active"><Link to='/work'>Work</Link></li></>
+                            )}
                         </ul>
                     </div>
                     <div className="contactNav">

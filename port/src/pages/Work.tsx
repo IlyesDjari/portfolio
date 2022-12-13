@@ -12,7 +12,9 @@ export default function Work() {
       <>
       <div className="workPageContainer">
       <Nav></Nav>
+      <div className="backButton">
       <BackButton></BackButton>
+      </div>
       <Ios></Ios>
       <Frontend></Frontend>
       <Backend></Backend>

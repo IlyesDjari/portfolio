@@ -1,0 +1,38 @@
+.backButton button {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+    opacity: 50%;
+    margin: 0vh 13.5vw 0 13.5vw;
+    transition: all 1s;
+}
+
+.backButtonDetails button {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+    opacity: 50%;
+    margin: 0vh 13.5vw 2vh 0;
+    transition: all 1s;
+}
+
+.backArrow {
+    width: 1vw;
+}
+
+.backTxt {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.backButton button:hover,
+.backButtonDetails button:hover {
+    transform: scale(1.02);
+    opacity: 70%;
+}

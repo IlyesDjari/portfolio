@@ -1,84 +1,87 @@
 .workDetailsPageContainer {
-  background-color: black;
-  height: auto;
-  padding-bottom: 10vh;
+    background-color: black;
+    height: auto;
+    padding-bottom: 10vh;
 }
 
 .detailsContent {
-  padding: 15vh 12.5vw 0 12.5vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    padding: 15vh 12.5vw 0 12.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .detailsContentWeb {
-  padding: 15vh 12.5vw 0 12.5vw;
-  display: flex;
-  flex-direction: column;
-  gap: 10vh;
+    padding: 15vh 12.5vw 0 12.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
 }
 
 .detailsTitle {
-  font-size: 3.2rem;
+    font-size: 3.2rem;
 }
 
 .descriptionWork {
-  margin-top: 5vh;
-  font-size: 1.4rem;
-  opacity: 30%;
-  font-weight: 500;
+    margin-top: 5vh;
+    font-size: 1.4rem;
+    opacity: 30%;
+    font-weight: 500;
 }
 
-.workTxt {
-  width: 35vw;
+.headerWorks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 45vw;
 }
 
 .carouselView .carousel {
-  width: 26.5vw !important;
+    width: 26.5vw !important;
 }
 
 .carouselWeb {
-  height: auto;
-  width: 72.5vw !important;
+    height: auto;
+    width: 72.5vw !important;
 }
+
 .carouselWeb img {
-  height: 50vh !important;
-  width: 72.5vw !important;
+    height: 50vh !important;
+    width: 72.5vw !important;
 }
 
 .thumbs-wrapper {
-  display: none;
+    display: none;
 }
 
 .headerDetails {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-
 .carousel img {
-  height: 75vh;
-  width: auto !important;
+    height: 75vh;
+    width: auto !important;
 }
 
 .githubButton {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1vw;
-  padding: 0.5vh 1vw;
-  width: 20vw;
-  background-color: #2F2F31;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    width: 5vw;
+    padding: 0.5vh 1vw;
+    background-color: #2F2F31;
+    transition: all 1s;
 }
 
-.githubButton h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  opacity: 80%;
+.githubButton:hover {
+    transform: scale(1.05);
 }
 
 .gitImg {
-height: 4vh;
+    height: 4vh;
 }

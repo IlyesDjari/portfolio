@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { GitButton } from "../components/button/GitButton";
 import React from "react";
+import { BackButton } from "../components/button/BackButton";
 
 
 export default function WorkDetails(props: { location: { state: { data: any; }; }; }) {
@@ -20,13 +21,17 @@ export default function WorkDetails(props: { location: { state: { data: any; }; 
       <>
       <div className="workDetailsPageContainer">
       <Nav></Nav>
-
       {data.attributes.type === "mobile" ? (
       <div className="detailsContent">
       <div className="workTxt">
+      <div className="backButtonDetails">
+        <BackButton></BackButton>
+        </div>
+        <div className="headerWorks">
       <h1 className="detailsTitle">{data.attributes.title}</h1>  
-      <p className="descriptionWork">{data.attributes.description}</p>
       {data.attributes.git === null ? null :  <GitButton src={data.attributes.git}></GitButton> }
+      </div>
+      <p className="descriptionWork">{data.attributes.description}</p>
       </div>
       <div className="imagesWorkDetails">
       <Carousel className="carouselView">
@@ -37,6 +42,9 @@ export default function WorkDetails(props: { location: { state: { data: any; }; 
       </div>) : (
        <div className="detailsContentWeb">
        <div className="workTxtWeb">
+       <div className="backButtonDetails">
+        <BackButton></BackButton>
+        </div>
        <div className="headerDetails">
      <h1 className="detailsTitle">{data.attributes.title}</h1>
      {data.attributes.git === null ? null :  <GitButton src={data.attributes.git}></GitButton> }

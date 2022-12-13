@@ -9,7 +9,7 @@ type projectsButtonProps = {
 export const SeeProjectsButton: React.FC<projectsButtonProps> = ({ src, text }) => {
   return (
       <>
-      <Link to='/work'>
+      <Link to='/work' className="seeProjectButton">
       <h2>{text}</h2><img src={src} alt="Logo" />
       </Link>
       </>

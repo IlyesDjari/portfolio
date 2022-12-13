@@ -12,7 +12,7 @@ export default function Introduction() {
                     <ul className="introductionFooter">
                         <li><a href="https://www.linkedin.com/in/ilyes-djari/" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
                         <li><a href="mailto:djari.ilyes@gmail.com">EMAIL</a></li>
-                        <li><a href="tel:0032489271473">PHONE</a></li>
+                        <li><a href="https://github.com/IlyesDjari" target="_blank" rel="noopener noreferrer">GITHUB</a></li>
                     </ul>
             </div>
         </>

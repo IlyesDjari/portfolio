@@ -8,8 +8,8 @@ export function BackButton() {
 
 
     return (
-        <button className="backButton" onClick={() => navigate(-1)}>
-            <img className="backArrow" src="" alt="backArrow" />
+        <button onClick={() => navigate(-1)}>
+            <img className="backArrow" src="/images/back.png" alt="backArrow" />
             <h2 className="backTxt">back</h2>
             </button>
         )
