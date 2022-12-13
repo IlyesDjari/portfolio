@@ -1,3 +1,5 @@
+import React from "react";
+import { SeeProjectsButton } from "../SeeProjectsButton";
 
 export default function FrontEnd() {
   return (
@@ -38,9 +40,10 @@ export default function FrontEnd() {
     </div>
 
     <div className="projectsFrontEnd">
-      <h2>See projects</h2>
-      <img src={'/images/purple-arrow.png'} alt="arrowRight" />
+    <SeeProjectsButton src="/images/purple-arrow.png" text="Explore my websites" />
+
       </div>
+
     
     </div>
     </div>

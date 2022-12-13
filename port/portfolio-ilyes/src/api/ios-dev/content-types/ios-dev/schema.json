@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ios-dev",
     "pluralName": "ios-devs",
-    "displayName": "iosDev"
+    "displayName": "iosDev",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,25 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "git": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

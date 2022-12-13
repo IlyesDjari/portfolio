@@ -4,7 +4,8 @@
   "info": {
     "singularName": "backend",
     "pluralName": "backends",
-    "displayName": "backend"
+    "displayName": "backend",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,25 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "string"
+    },
+    "git": {
+      "type": "string"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

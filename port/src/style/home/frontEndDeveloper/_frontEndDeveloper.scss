@@ -63,7 +63,7 @@
     }
 }
 
-.projectsFrontEnd {
+.projectsFrontEnd a {
     margin-top: 10vh;
     display: flex;
     flex-direction: row;
@@ -76,7 +76,7 @@
     }
 }
 
-.projectsFrontEnd img {
+.projectsFrontEnd a img {
     width: 5vw;
     @media screen and (max-width: 480px) {
         width: 10vw;
