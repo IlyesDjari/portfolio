@@ -1,4 +1,7 @@
 .iosWorkTitle {
-  margin: 5vh 12.5vw 0 13.5vw;
-  color: #00FF41;
+    margin: 5vh 12.5vw 0 13.5vw;
+    color: #00FF41;
+    @media screen and (max-width: 480px) {
+        font-size: 1.5rem;
+    }
 }

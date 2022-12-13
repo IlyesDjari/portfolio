@@ -24,6 +24,9 @@
 
 .backArrow {
     width: 1vw;
+    @media screen and (max-width: 480px) {
+        width: 3vw;
+    }
 }
 
 .backTxt {

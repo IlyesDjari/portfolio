@@ -1,5 +1,7 @@
 .frontendWorkTitle {
-  margin: 5vh 12.5vw 0 13.5vw;
-  color: #B84BFF;
-
+    margin: 5vh 12.5vw 0 13.5vw;
+    color: #B84BFF;
+    @media screen and (max-width: 480px) {
+        font-size: 1.5rem;
+    }
 }

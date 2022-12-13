@@ -9,6 +9,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+    }
 }
 
 .detailsContentWeb {
@@ -20,6 +23,9 @@
 
 .detailsTitle {
     font-size: 3.2rem;
+    @media screen and (max-width: 480px) {
+        font-size: 2rem;
+    }
 }
 
 .descriptionWork {
@@ -27,6 +33,9 @@
     font-size: 1.4rem;
     opacity: 30%;
     font-weight: 500;
+    @media screen and (max-width: 480px) {
+        font-size: 1rem;
+    }
 }
 
 .headerWorks {
@@ -35,10 +44,17 @@
     align-items: center;
     justify-content: space-between;
     width: 45vw;
+    @media screen and (max-width: 480px) {
+        width: 75vw;
+    }
 }
 
 .carouselView .carousel {
     width: 26.5vw !important;
+    @media screen and (max-width: 480px) {
+        margin-top: 5vh !important;
+        width: 75vw !important;
+    }
 }
 
 .carouselWeb {
@@ -47,8 +63,11 @@
 }
 
 .carouselWeb img {
-    height: 50vh !important;
+    height: 20vh !important;
     width: 72.5vw !important;
+    @media screen and (max-width: 480px) {
+        aspect-ratio: 16/9 !important;
+    }
 }
 
 .thumbs-wrapper {
@@ -76,6 +95,9 @@
     padding: 0.5vh 1vw;
     background-color: #2F2F31;
     transition: all 1s;
+    @media screen and (max-width: 480px) {
+        padding: 0.5vh 5.5vw;
+    }
 }
 
 .githubButton:hover {
@@ -84,4 +106,7 @@
 
 .gitImg {
     height: 4vh;
+    @media screen and (max-width: 480px) {
+        height: 3vh;
+    }
 }

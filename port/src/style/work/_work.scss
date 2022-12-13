@@ -7,6 +7,9 @@
 .myWorkTitle {
     margin: 2vh 13.5vw 0 13.5vw;
     font-size: 3.5rem;
+    @media screen and (max-width: 480px) {
+        font-size: 1.9rem;
+    }
 }
 
 .backButton {
