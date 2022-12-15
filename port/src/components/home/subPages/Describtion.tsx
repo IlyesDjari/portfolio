@@ -1,3 +1,4 @@
+import React from "react";
 
 export function Describtion() {
 
@@ -12,9 +13,6 @@ export function Describtion() {
     </p>
     </div>
     <div className="lineDesc"></div>
-    <div className="resumeDesc">
-      <h2>See my resume</h2>
-    </div>
     </div>
     </div>
    

@@ -9,6 +9,7 @@
     flex-direction: row;
     gap: 3vh;
     flex-wrap: wrap;
+    justify-content: space-between;
     @media screen and (max-width: 480px) {
         justify-content: space-between;
     }
@@ -22,10 +23,8 @@
 .angularFront {
     display: flex;
     flex-direction: row;
-    background-color: #2F2F31;
     width: 22vw;
     height: 12.5vh;
-    padding: 3vh 0 3vh 5vw;
     align-items: center;
     gap: 2vw;
     @media screen and (max-width: 480px) {
