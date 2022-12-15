@@ -1,13 +1,18 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Loading } from "./Loading";
 
 export function Backend() {
+
+  const [loading, setLoading] = useState(true);
+
 
   const [backendData,setBackendData]=useState([])
     useEffect(()=>{
       axios.get('https://portfolioilyes.ew.r.appspot.com/api/backends')
         .then(res=>{
           setBackendData(res.data.data) 
+          setLoading(false);
         })
         .catch(err=>{
           console.log(err);
@@ -22,6 +27,11 @@ export function Backend() {
     </div>
     )
   })
+
+
+  if (loading) {
+    return <Loading></Loading>
+  } else {
   return (
     <>
 
@@ -31,4 +41,5 @@ export function Backend() {
     </div>
     </>
   );
+  }
 }

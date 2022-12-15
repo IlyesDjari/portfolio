@@ -1,14 +1,20 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import {Link} from "react-router-dom"
+import { Loading } from "./Loading";
 
 export function Ios() {
+
+  const [loading, setLoading] = useState(true);
+
 
   const [iosData,setIosData]=useState([])
   useEffect(()=>{
     axios.get('https://portfolioilyes.ew.r.appspot.com/api/ios-devs?populate=*')
       .then(res=>{
         setIosData(res.data.data) 
+        setLoading(false);
+
       })
       .catch(err=>{
         console.log(err);
@@ -25,6 +31,11 @@ export function Ios() {
     </Link>
   )
 })
+
+
+if (loading) {
+  return <Loading></Loading>
+} else {
 return (
   <>
   <h1 className="myWorkTitle">All cases</h1>
@@ -35,5 +46,5 @@ return (
   </div>
   </>
 );
-  
+}
 }

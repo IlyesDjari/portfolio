@@ -1,16 +1,20 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Loading } from "./Loading";
 
 export function Design() {
 
+  const [loading, setLoading] = useState(true);
 
 
   const [designData,setDesignData]=useState([])
     useEffect(()=>{
       axios.get('https://portfolioilyes.ew.r.appspot.com/api/designs?populate=*')
         .then(res=>{
-          setDesignData(res.data.data)           
+          setDesignData(res.data.data)  
+          setLoading(false);
+         
         })
         .catch(err=>{
           console.log(err);
@@ -27,6 +31,10 @@ export function Design() {
         </Link>
       )
     }) 
+
+    if (loading) {
+      return (<Loading></Loading>)
+    } else {
   return (
     <>
 
@@ -36,4 +44,5 @@ export function Design() {
     </div>
     </>
   );
+  }
 }
