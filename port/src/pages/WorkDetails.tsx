@@ -31,7 +31,7 @@ export default function WorkDetails(props: { location: { state: { data: any; }; 
       <h1 className="detailsTitle">{data.attributes.title}</h1>  
       {data.attributes.git === null ? null :  <GitButton src={data.attributes.git}></GitButton> }
       </div>
-      <p className="descriptionWork">{data.attributes.description}</p>
+      <p className="descriptionWork" style={{width: "45vw"}}>{data.attributes.description}</p>
       </div>
       <div className="imagesWorkDetails">
       <Carousel className="carouselView">
