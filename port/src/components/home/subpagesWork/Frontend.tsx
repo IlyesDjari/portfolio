@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Loading } from "./Loading";
+import { Fade } from "react-awesome-reveal";
+
 
 export function Frontend() {
 
@@ -38,10 +40,12 @@ export function Frontend() {
   } else {
   return (
     <>
+    <Fade cascade damping={0.1}>
     <h1 className="frontendWorkTitle">Frontend</h1>
     <div className="allProjects">
     {frontendWorks}
     </div>
+    </Fade>
     </>
   );
   }

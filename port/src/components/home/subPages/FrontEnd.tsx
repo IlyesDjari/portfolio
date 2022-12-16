@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import { SeeProjectsButton } from "../SeeProjectsButton";
 
 export default function FrontEnd() {
@@ -9,6 +10,8 @@ export default function FrontEnd() {
     <h1 className="iOSDeveloperTitle">Front-end Developer</h1>
 
     <div className="frontEndElements">
+    <Fade cascade damping={0.3} triggerOnce>
+
     <div className="htmlFront">
     <img src={'/images/html.png'} alt="Html" />
       <h2>HTML</h2>
@@ -38,15 +41,15 @@ export default function FrontEnd() {
     <img src={'/images/angular.svg'} alt="JavaScript" />
     <h2>Angular</h2>
     </div>
+    </Fade>
 
     <div className="projectsFrontEnd">
     <SeeProjectsButton src="/images/purple-arrow.png" text="Explore my websites" />
-
       </div>
+    </div>
 
+    </div>
     
-    </div>
-    </div>
     </div>
   )
 }

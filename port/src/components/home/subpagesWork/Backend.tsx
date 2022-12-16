@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Loading } from "./Loading";
+import { Fade } from "react-awesome-reveal";
+
 
 export function Backend() {
 
@@ -34,11 +36,12 @@ export function Backend() {
   } else {
   return (
     <>
-
+   <Fade cascade damping={0.1} triggerOnce> 
     <h1 className="backendWorkTitle">Backend</h1>
     <div className="allProjects">
     {backendWorks}
     </div>
+    </Fade>
     </>
   );
   }

@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Loading } from "./Loading";
+import { Fade } from "react-awesome-reveal";
+
 
 export function Design() {
 
@@ -37,11 +39,12 @@ export function Design() {
     } else {
   return (
     <>
-
+    <Fade cascade damping={0.1} triggerOnce>
     <h1 className="designUIUXTitle">UI/UX Design</h1>
     <div className="allProjects">
     {designWorks}
     </div>
+    </Fade>
     </>
   );
   }

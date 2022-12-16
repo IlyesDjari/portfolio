@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import { ProgramSubtitle } from "../ProgramSubtitle";
 import { SeeProjectsButton } from "../SeeProjectsButton";
 
@@ -13,9 +14,11 @@ export function IOSDeveloper() {
     <h1 className="iOSDeveloperTitle">iOS Developer</h1>
    
     <div className="iosTools">
+      <Fade cascade damping={0.3} triggerOnce>
       <ProgramSubtitle src="/images/swift.png" text="Swift storyboard"/>
       <ProgramSubtitle src="/images/swiftui.png" text="Swift UI"/>
       <ProgramSubtitle src="/images/objective-c-logo.png" text="Objective-C"/>
+      </Fade>
 
     </div>
     </div>
