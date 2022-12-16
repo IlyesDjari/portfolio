@@ -7,7 +7,7 @@ export function Designer() {
 
   return (
     <div className="iOSBackground">
-    <div className="iOS">
+    <div className="design">
     <h2 className="designerSubtitle">Design</h2>
     <h1 className="iOSDeveloperTitle">UI/UX Designer</h1>
     <div className="designContainer">
