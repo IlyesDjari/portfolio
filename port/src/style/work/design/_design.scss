@@ -1,6 +1,9 @@
 .projectContainer {
     height: 20vh;
-    background-color: #2F2F31;
+    background: linear-gradient(112.1deg, rgb(17, 17, 17) 11.4%, rgb(23, 23, 23) 70.2%);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    border-radius: 10px;
     width: 16vw;
     transition: all 0.5s;
     display: flex;
