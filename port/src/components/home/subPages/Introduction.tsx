@@ -9,8 +9,8 @@ export default function Introduction() {
             <div className="homeBG">
                 <div className="introductionContainer">
                     <div className="textIntro">
+                    <Fade cascade damping={0.3} triggerOnce>
                     <h1 className="introductionTitle">ILYES DJARI</h1>
-                    <Fade delay={3} triggerOnce>
                     <h2 className="introductionSubTitle">Designer & developer</h2>
                     </Fade>
                     </div>
@@ -24,11 +24,12 @@ export default function Introduction() {
             
             <div className="imageEffect">
             <Link to="/about">
-                <Fade cascade damping={0.3} triggerOnce></Fade>
+                <Fade cascade damping={0.3} triggerOnce>
             <img className="ilyesPicture" src="/images/ilyesMono.png" alt="ilyes" />
             <img className="ilyesPicture" src="/images/ilyesMono.png" alt="ilyes" />
             <img className="ilyesPicture" src="/images/ilyesMono.png" alt="ilyes" />
             <img className="ilyesPicture" src="/images/ilyesMono.png" alt="ilyes" />
+            </Fade>
             </Link>
             </div>
            
