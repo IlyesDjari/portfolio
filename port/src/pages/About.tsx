@@ -5,6 +5,8 @@ import Nav from "../components/home/Nav"
 
 export function About() {
 
+    window.scrollTo(0, 0);
+
     return (
         <>
             <Nav></Nav>

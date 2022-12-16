@@ -8,7 +8,7 @@ import { Ios } from "../components/home/subpagesWork/Ios";
 
 export default function Work() {
 
-
+  window.scrollTo(0, 0);
   
   
   return (

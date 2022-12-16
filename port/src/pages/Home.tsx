@@ -9,6 +9,8 @@ import React from "react"
 
 export default function Home() {
 
+    window.scrollTo(0, 0);
+
     return (
         <>
         <Nav></Nav>

@@ -9,6 +9,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function WorkDetails(props: { location: { state: { data: any; }; }; }) {
   const { data } = props.location.state;  
+  window.scrollTo(0, 0);
   const img = data.attributes.images.data
   const images = img.map(({id,attributes: {url}}: {id: any, attributes : any , url: string})=>{    
     return(
