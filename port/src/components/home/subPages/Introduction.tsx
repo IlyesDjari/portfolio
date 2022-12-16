@@ -24,6 +24,7 @@ export default function Introduction() {
             
             <div className="imageEffect">
             <Link to="/about">
+                <Fade cascade damping={0.3} triggerOnce></Fade>
             <img className="ilyesPicture" src="/images/ilyesMono.png" alt="ilyes" />
             <img className="ilyesPicture" src="/images/ilyesMono.png" alt="ilyes" />
             <img className="ilyesPicture" src="/images/ilyesMono.png" alt="ilyes" />
