@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import {Link} from 'react-router-dom'
 
 export default function Introduction() {
@@ -16,9 +16,11 @@ export default function Introduction() {
                     </div>
                 </div>
                     <ul className="introductionFooter">
+                        <Fade cascade damping={0.3} triggerOnce >
                         <li><a href="https://www.linkedin.com/in/ilyes-djari/" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
                         <li><a href="mailto:djari.ilyes@gmail.com">EMAIL</a></li>
                         <li><a href="https://github.com/IlyesDjari" target="_blank" rel="noopener noreferrer">GITHUB</a></li>
+                        </Fade>
                     </ul>
             </div>
             
