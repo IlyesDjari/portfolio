@@ -1,0 +1,32 @@
+.aboutBody {
+    min-height: 100vh;
+    padding-bottom: 10vh;
+    background-color: black;
+}
+
+.aboutContainer {
+    margin: 2vh 13.5vw 0 13.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.backButtonAbout {
+    margin-top: 15vh;
+}
+
+.aboutTitle {
+    font-size: 2.5rem;
+    @media screen and (max-width: 480px) {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+}
+
+.aboutDescription {
+    width: 50vw;
+    opacity: 80%;
+    @media screen and (max-width: 480px) {
+        width: 75vw;
+    }
+}

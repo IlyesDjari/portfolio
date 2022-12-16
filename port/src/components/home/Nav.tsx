@@ -9,8 +9,47 @@ import { useLocation } from "react-router-dom";
 
 export default function Nav() {
     
-    const location = useLocation();
-    console.log(location.pathname);
+const location = useLocation();
+const value = String(location.pathname)    
+
+  let navigation;
+  switch (value) {
+    case '/':
+        navigation = <>
+      <li className="active">
+        <Link to='/'>Home</Link>
+        </li>
+        <li><Link to='/work'>Work</Link>
+        </li>
+        <li><Link to='/about'>About</Link>
+        </li>
+        </>
+      break;
+    case '/work':
+        navigation = <>
+      <li >
+        <Link to='/'>Home</Link>
+        </li>
+        <li className="active"><Link to='/work'>Work</Link>
+        </li>
+        <li><Link to='/about'>About</Link>
+        </li>
+        </>
+      break;
+    case '/about':
+        navigation = <>
+      <li >
+        <Link to='/'>Home</Link>
+        </li>
+        <li ><Link to='/work'>Work</Link>
+        </li>
+        <li className="active"><Link to='/about'>About</Link>
+        </li>
+        </>
+      break;
+    default:
+      navigation = <div>Invalid option</div>;
+  }
 
     return (
         <>
@@ -21,10 +60,8 @@ export default function Nav() {
                     </div>
                     <div className="menuNav">
                         <ul>
-                        {location.pathname === "/" ? (
-                            <><li className="active"><Link to='/'>Home</Link></li><li><Link to='/work'>Work</Link></li></>) : (
-                                <><li><Link to='/'>Home</Link></li><li className="active"><Link to='/work'>Work</Link></li></>
-                            )}
+                        {navigation}
+                        
                         </ul>
                     </div>
                     <div className="contactNav">

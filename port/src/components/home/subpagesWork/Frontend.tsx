@@ -40,7 +40,7 @@ export function Frontend() {
   } else {
   return (
     <>
-    <Fade cascade damping={0.1}>
+    <Fade cascade damping={0.1} triggerOnce>
     <h1 className="frontendWorkTitle">Frontend</h1>
     <div className="allProjects">
     {frontendWorks}
