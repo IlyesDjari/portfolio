@@ -5,10 +5,16 @@
 }
 
 .aboutContainer {
-    margin: 2vh 13.5vw 0 13.5vw;
+    margin: 2vh 0 0 13.5vw;
+    width: 45vw;
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        width: 75vw;
+        margin: 2vh 13.5vw 0 13.5vw
+    }
 }
 
 .backButtonAbout {
@@ -24,9 +30,36 @@
 }
 
 .aboutDescription {
-    width: 50vw;
     opacity: 50%;
+}
+
+.contentAbout {
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        width: 100vw;
+    }
+}
+
+.youngIlyes {
+    width: 21.5vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    @media screen and (max-width: 480px) {
+        width: 100vw;
+    }
+}
+
+.youngIlyes img {
+    margin-top: 12vh;
+    width: 20vw;
+    height: auto;
     @media screen and (max-width: 480px) {
         width: 75vw;
+        margin: 5vh 13.5vw 0 13.5vw;
     }
 }

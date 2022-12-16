@@ -1,4 +1,4 @@
-import { Fade } from "react-awesome-reveal"
+import { Fade, Slide } from "react-awesome-reveal"
 import { BackButton } from "../components/button/BackButton"
 import Nav from "../components/home/Nav"
 
@@ -14,6 +14,7 @@ export function About() {
                 <div className="backButtonAbout">
                 <BackButton></BackButton>
                 </div>
+                <div className="contentAbout">
                 <div className="aboutContainer">
                     <h1 className="aboutTitle">Coding lit a new spark in my eyes!</h1>
                     <Fade cascade damping={0.3} triggerOnce> 
@@ -34,6 +35,12 @@ export function About() {
                     Besides my studies, I have been working  for more than 4 years at IKEA Zaventem. I am a salesperson there in the plants & decoration section. This allowed me to build a professional experience and to immerse myself in the world of work.
                     </p>
                     </Fade>
+                </div>
+                <div className="youngIlyes">
+                    <Slide direction="right" triggerOnce damping={0.3}> 
+                    <img src="/images/miniIlyes.jpg" alt="young Ilyes" />
+                    </Slide>
+                </div>
                 </div>
             </div>
         </>
