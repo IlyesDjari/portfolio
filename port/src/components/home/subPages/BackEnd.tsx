@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import { ProgramSubtitle } from "../ProgramSubtitle";
 import { SeeProjectsButton } from "../SeeProjectsButton";
 
@@ -19,9 +19,12 @@ export function BackEnd() {
       <ProgramSubtitle src="/images/laravel.png" text="Laravel"/>
       <ProgramSubtitle src="/images/kotlin.png" text="Kotlin"/>
       </Fade>
+      <Slide damping={0.3} triggerOnce>
       <div className="projectsBackend">
       <SeeProjectsButton src="/images/red-arrow.png" text="Explore my websites" />
       </div>
+      </Slide>
+
     </div>
 
     </div>

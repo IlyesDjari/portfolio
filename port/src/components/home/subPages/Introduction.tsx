@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 export default function Introduction() {
     return (
@@ -6,7 +7,9 @@ export default function Introduction() {
             <div className="homeBG">
                 <div className="introductionContainer">
                     <h1 className="introductionTitle">ILYES DJARI</h1>
+                    <Fade delay={3} triggerOnce>
                     <h2 className="introductionSubTitle">Designer & developer</h2>
+                    </Fade>
                 </div>
 
                     <ul className="introductionFooter">

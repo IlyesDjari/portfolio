@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { GitButton } from "../components/button/GitButton";
 import React from "react";
 import { BackButton } from "../components/button/BackButton";
+import { Fade } from "react-awesome-reveal";
 
 
 export default function WorkDetails(props: { location: { state: { data: any; }; }; }) {
@@ -31,12 +32,16 @@ export default function WorkDetails(props: { location: { state: { data: any; }; 
       <h1 className="detailsTitle">{data.attributes.title}</h1>  
       {data.attributes.git === null ? null :  <GitButton src={data.attributes.git}></GitButton> }
       </div>
+      <Fade damping={0.3} triggerOnce>
       <p className="descriptionWork" style={{width: "45vw"}}>{data.attributes.description}</p>
+      </Fade>
       </div>
       <div className="imagesWorkDetails">
+      <Fade damping={0.3} triggerOnce>
       <Carousel className="carouselView">
       {images}
       </Carousel>
+      </Fade>
       </div>
 
       </div>) : (
@@ -49,12 +54,16 @@ export default function WorkDetails(props: { location: { state: { data: any; }; 
      <h1 className="detailsTitle">{data.attributes.title}</h1>
      {data.attributes.git === null ? null :  <GitButton src={data.attributes.git}></GitButton> }
      </div>
+     <Fade damping={0.3} triggerOnce>
      <p className="descriptionWork">{data.attributes.description}</p>
+     </Fade>
      </div>
      <div className="imagesWorkDetails">
+     <Fade damping={0.3} triggerOnce>
      <Carousel className="carouselWeb">
      {images}
      </Carousel>
+     </Fade>
      </div>
      </div>
       )}

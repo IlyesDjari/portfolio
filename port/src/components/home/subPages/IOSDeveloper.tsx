@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import { ProgramSubtitle } from "../ProgramSubtitle";
 import { SeeProjectsButton } from "../SeeProjectsButton";
 
@@ -24,9 +24,11 @@ export function IOSDeveloper() {
     </div>
     <img className="iphoneExample" src={"/images/iPhonePortfolio.png"} alt="" />
     </div>
+    <Slide cascade damping={0.3} triggerOnce>
     <div className="projectsIos">
       <SeeProjectsButton src="/images/right-arrow.png" text="Explore my apps" />
     </div>
+    </Slide>
     </div>
     </div>
   )

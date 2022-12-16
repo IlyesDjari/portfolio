@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import { CircularElements } from "../CircularElements";
 import { SeeProjectsButton } from "../SeeProjectsButton";
 
@@ -19,9 +19,11 @@ export function Designer() {
       <CircularElements src="/images/figma.png" text="Figma" />
       </Fade>
       </div>
+      <Slide damping={0.3} triggerOnce>
       <div className="projectsDesign">
       <SeeProjectsButton src="/images/blue-arrow.png" text="Explore my designs" />
       </div>
+      </Slide>
     </div>
     <div className="footerLine"></div>
     </div>
