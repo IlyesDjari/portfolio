@@ -1,15 +1,92 @@
 .homeBG {
     background-color: black;
     height: 90vh;
+    width: 100vw;
 }
 
-.introductionContainer {
+.textIntro {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1vh;
+    @media screen and (max-width: 480px) {
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        margin-top: 30vh;
+    }
+}
+
+.containerIntro {
+    background-color: black;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.imageEffect {
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-items: flex-end;
+    width: 40vw;
+    right: 0vw;
+    height: 90vh;
+    bottom: 10vh;
+    transition: all 2s;
+    @media screen and (max-width: 480px) {
+        position: absolute;
+        height: 75vh;
+        width: 100vw;
+        bottom: 22.5vh;
+        z-index: 0;
+    }
+}
+
+.imageEffect:hover img:nth-child(4) {
+    transform: translate(160px, 0);
+    opacity: 1;
+}
+
+.imageEffect:hover img:nth-child(3) {
+    transform: translate(120px, 0);
+    opacity: 0.8;
+}
+
+.imageEffect:hover img:nth-child(2) {
+    transform: translate(80px, 0);
+    opacity: 0.6;
+}
+
+.imageEffect:hover img:nth-child(1) {
+    transform: translate(40px, 0);
+    opacity: 0.4;
+}
+
+.ilyesPicture {
+    padding-top: 10vh;
+    position: absolute;
+    height: 90vh;
+    transition: 0.5s;
+    @media screen and (max-width: 480px) {
+        position: relative;
+    }
+}
+
+.introductionContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1vh;
     height: 70vh;
     margin: 0 12.5vw;
+    padding-top: 10vh;
+    @media screen and (max-width: 480px) {
+        margin: 0;
+        justify-content: center;
+    }
 }
 
 .introductionTitle {
