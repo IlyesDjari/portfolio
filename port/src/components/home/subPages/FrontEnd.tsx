@@ -43,7 +43,7 @@ export default function FrontEnd() {
     </div>
     </Fade>
 
-    <Slide damping={0.3} triggerOnce>
+    <Slide damping={0.1} triggerOnce>
     <div className="projectsFrontEnd">
     <SeeProjectsButton src="/images/purple-arrow.png" text="Explore my websites" />
       </div>
