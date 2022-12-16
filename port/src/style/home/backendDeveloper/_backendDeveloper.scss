@@ -16,8 +16,21 @@
 
 .backendTools {
     margin-top: 7.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3vw;
     @media screen and (max-width: 480px) {
         margin-top: 5vh;
+        flex-direction: column;
+        gap: 5vh;
+    }
+}
+
+.rightBackend img {
+    width: 35vw;
+    @media screen and (max-width: 480px) {
+        width: 70vw;
     }
 }
 
