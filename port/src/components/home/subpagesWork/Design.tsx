@@ -24,7 +24,7 @@ export function Design() {
    },[])
 
 
-     const designWorks = designData.map(({data,id, attributes: {title}, attributes})=>{      
+     const designWorks = designData.map(({id, attributes: {title}, attributes})=>{      
       return( 
         <Link to={`/work/details`} state={{attributes}}>
           <div className="projectContainer" key={id}>

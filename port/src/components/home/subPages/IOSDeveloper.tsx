@@ -22,7 +22,9 @@ export function IOSDeveloper() {
 
     </div>
     </div>
+     <Fade damping={0.8} triggerOnce>
     <img className="iphoneExample" src={"/images/iPhonePortfolio.png"} alt="" />
+    </Fade>
     </div>
     <Slide cascade damping={0.3} triggerOnce>
     <div className="projectsIos">

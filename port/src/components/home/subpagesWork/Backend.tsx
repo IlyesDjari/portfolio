@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Loading } from "./Loading";
 import { Fade } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 
 export function Backend() {
@@ -11,7 +12,7 @@ export function Backend() {
 
   const [backendData,setBackendData]=useState([])
     useEffect(()=>{
-      axios.get('https://portfolioilyes.ew.r.appspot.com/api/backends')
+      axios.get('https://portfolioilyes.ew.r.appspot.com/api/backends?populate=*')
         .then(res=>{
           setBackendData(res.data.data) 
           setLoading(false);
@@ -22,11 +23,13 @@ export function Backend() {
    },[])
    
 
-   const backendWorks = backendData.map(({data,id, attributes, attributes: {title}})=>{
+   const backendWorks = backendData.map(({id, attributes, attributes: {title}})=>{
     return( 
+      <Link to={`/work/details`} state={{attributes}}>
     <div className="projectContainer" key={id}>
       <h2 className="projectName"> {title} </h2>
     </div>
+    </Link>
     )
   })
 
